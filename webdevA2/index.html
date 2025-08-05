@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> WEBDEV A2 </title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1 class="banner textShadow" id="top">Our Ocean and Our Impact</h1>
+
+    <!-- Navigation -->
+    <div>
+        <ul>
+            <li id="introNav" class="textShadow"><a href="#">Introduction</a></li>
+            <li id="plasticNav" class="textShadow"><a href="#">Plastic Pollution</a></li>
+            <li id="climateNav" class="textShadow"><a href="#">Climate Change</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Main Intro Content -->
+        <div id="intro">
+            <div class="content">
+                <h1>Introduction</h1>
+                <img src="images/corals.jpg" class="wrapImageR" height="250" alt="picture of corals and fish">
+                <p>
+                    From the sunlit surface to the pitch-black abyss,
+                    oceans hold endless marvels that fuel our curiosity and inspire exploration.
+                    They generate over half of the oxygen we breathe, house some of the oldest living creatures,
+                    and contain ecosystems more diverse than any on land.
+                </p>
+            </div>
+
+            <div class="content2">
+                <h1>Did you know?</h1>
+                <img src="images/deepocean.jpg" class="wrapImageL" height="300" alt="picture deep underwater">
+                <p>
+                    The ocean covers more than 70% of our planet’s surface?
+                    It holds about 96.5% of all Earth's water!
+                    yet we’ve explored only a fraction of its vast depths.
+                    Beneath its shimmering waves lies a mysterious world teeming with incredible creatures,
+                    breathtaking landscapes, and fascinating secrets.
+                    From glowing deep-sea organisms to underwater mountain ranges taller than Everest.
+                </p>
+            </div>
+        </div>
+
+        <!-- Plastic Pollution Content -->
+        <div id="plastic">
+            <div class="content">
+                <h1>Plastic Pollution</h1>
+                <img src="images/turtleplastic.jpg" class="wrapImageR" height="250" alt="picture turtle eating plastic">
+                <p>
+                    Plastic pollution has become one of the greatest threats facing our oceans today.
+                    Every year, millions of tons of plastic waste find their way into the sea,
+                    harming marine life and disrupting delicate ecosystems.
+                    From tiny microplastics to massive floating debris,
+                    plastic pollution affects creatures large and small
+                    — whales, turtles, fish, and seabirds often mistake plastic for food,
+                    leading to injury or death.
+                </p>
+            </div>
+
+            <div class="content2">
+                <h1>Plastic in Deepest Areas</h1>
+                <img src="images/plasticmarianatrench.jpg" class="wrapImageL" height="250"
+                    alt="picture of plastic in mariana trench">
+                <p>
+                    The Mariana Trench—the deepest point in the ocean—extends nearly 10,975 meters (36,000 feet)
+                    down in a remote part of the Pacific Ocean. A study revealed that a plastic bag, like the kind given
+                    away at grocery stores,
+                    is now the deepest known piece of plastic trash, inside the Mariana Trench.
+                    <a href="https://www.youtube.com/embed/exB3EWsnJKg" target="_blank">Video Link</a>
+                </p>
+            </div>
+
+            <!-- Plastic Minigame -->
+            <div class="center content">
+                <h1>Plastic Cleanup</h1>
+                <p>Click on plastic to collect it</p>
+                <h2 id="scoreBoxGame">Score: 0</h2>
+                <div class="gameArea">
+                    <img id="plasticId" src="images/plasticbag.png" width="50" alt="plastic bag">
+                </div>
+                <p>(Clean-up will be endless as long as we keep littering, let's do our part and refrain from
+                    littering!)</p>
+            </div>
+        </div>
+
+        <!-- Climate Change Content -->
+        <div id="climate">
+            <div class="content">
+                <h1>Rising Sea Levels</h1>
+                <img src="images/iceberg.jpg" class="wrapImageR" height="250" alt="picture of iceberg">
+                <p>
+                    As global temperatures continue to rise, polar ice caps and glaciers are melting at an alarming
+                    rate,
+                    leading to rapidly rising sea levels. This not only threatens low-lying coastal communities with
+                    flooding and erosion,
+                    but also disrupts delicate marine ecosystems. Saltwater intrusion into freshwater habitats, the loss
+                    of wetlands,
+                    and the submersion of vital breeding grounds all pose significant risks to both marine life and
+                    human populations.
+                </p>
+            </div>
+
+            <div class="content2">
+                <h1>Multiple Ocean Species Extinction</h1>
+                <img src="images/bleachedcorals.jpg" class="wrapImageL" height="250" alt="picture of iceberg">
+                <p>
+                    Climate change is pushing many ocean species to the brink of extinction. Rising sea temperatures,
+                    ocean acidification, and deoxygenation are altering habitats faster than marine life can adapt.
+                    Coral reefs—often referred to as the rainforests of the sea—are bleaching and dying at unprecedented
+                    rates, leaving countless fish, invertebrates, and marine mammals without shelter or food. From tiny
+                    plankton to large predators, the entire food chain is being affected.
+                </p>
+            </div>
+
+            <div class="content">
+                <h1>MCQ Quiz</h1>
+                <fieldset>
+                    <legend>1. How much has the Sea Level risen since 1880?</legend>
+                    <input type="radio" name="q1" value="q11"> 6-9cm
+                    <input type="radio" name="q1" value="q12"> 11-14cm
+                    <input type="radio" name="q1" value="q13"> 21-24cm
+                    <input type="radio" name="q1" value="q14"> 25-28cm
+                </fieldset>
+                <fieldset>
+                    <legend>2. How much of the Ocean have we physically explored estimated?</legend>
+                    <input type="radio" name="q2" value="q21"> 5%
+                    <input type="radio" name="q2" value="q22"> 8%
+                    <input type="radio" name="q2" value="q23"> 17%
+                    <input type="radio" name="q2" value="q24"> 21%
+                </fieldset>
+                <fieldset>
+                    <legend>3. Only about 2.5% of the Earth's water is Freshwater, where is most of it located?</legend>
+                    <input type="radio" name="q3" value="q31"> Atmosphere
+                    <input type="radio" name="q3" value="q32"> Lakes and Rivers
+                    <input type="radio" name="q3" value="q33"> Deep Underwater
+                    <input type="radio" name="q3" value="q34"> Glaciers and Ice Caps
+                </fieldset>
+                <button id="btnSubmit">Submit Quiz</button>
+                <h2 id="scoreBoxMCQ">Not submitted</h2>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div>
+            <img src="images/qrcode.png" class="qrCode" width="100" alt="qrcode to live website">
+        </div>
+        <footer class="textShadow">
+            <ul>
+                <li>
+                    <a href="#top">Back to Top</a>
+                </li>
+            </ul>
+            <button id="resetButton" class="wrapImageR">Reset App</button>
+            <button id="fullscreenBtn" class="wrapImageL">Go Fullscreen</button>
+        </footer>
+    </main>
+</body>
+
+</html>
